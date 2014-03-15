@@ -1,4 +1,4 @@
-module
+module CurrentCart
   extend ActiveSupport::Concern
 
   private
