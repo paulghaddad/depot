@@ -1,5 +1,5 @@
-require 'test'
-
+require 'testQ'
+# Another thing
 class LineItemsControllerTest < ActionController::TestCase
   setup do
     @line_item = line_items(:one)
