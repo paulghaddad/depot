@@ -38,10 +38,14 @@
       margin-left: 100px;
       margin-top: o.5em;
       margin-bottom: 0.8em;
+
+      form, div {
+        display: inline;
+      }
     }
 
     .price {
-      color: #44a;
+      color: #101088;
       font-weight: bold;
       margin-right: 3em;
     }
