@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'test'
 
 class LineItemsControllerTest < ActionController::TestCase
   setup do
