@@ -4,7 +4,11 @@ class StoreController < ApplicationController
   before_action :set_cart
   
   def index
-    @products = Product.order(:title)
+    if params[:set_locale]
+      redirect_to store_url(locale: params[:set_locale])
+    else
+      @products = Product.order(:title)
+    end
     @current_time = Time.now.strftime("Today is %A at %l:%k %P")
     @count = increment_count
   end
