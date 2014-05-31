@@ -15,7 +15,7 @@ class SessionsControllerTest < ActionController::TestCase
 
   test "should fail login" do
     dave = users(:one)
-    post :create, name: dave.name, :password: 'wrong'
+    post :create, name: dave.name, password: 'wrong'
     assert_redirected_to login_url
   end
 
